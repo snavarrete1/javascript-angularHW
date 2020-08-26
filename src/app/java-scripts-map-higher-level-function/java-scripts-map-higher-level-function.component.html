@@ -1,0 +1,53 @@
+<h1>What are JavaScript Higher Order Functions?</h1>
+<h2>Understanding JavaScript Higher Order Functions</h2>
+<p>A Higher-Order function is a function that receives a 
+    function as an input argument or returns a function as output. 
+    This is a concept that was born out of functional programming. 
+    This maybe an alien concepts for those who are more used to the 
+    Object Oriented Programming world. JavaScript, is a language that 
+    has started to use a lot of the functional programming concepts lately. 
+    Higher-Order functions is one of them.
+  <li>Pending: you don’t know if you will complete learning JavaScript by the next month.</li>
+  <li>Fulfilled: you complete learning JavaScript by the next month.</li>
+  <li>Rejected: you don’t learn JavaScript at all.</li>
+  A promise starts in the pending state which indicates that the promise hasn’t completed. It ends with either fulfilled (successful) or rejected (failed) state.</p>
+
+<h3>Built-in High-Order Functions</h3>
+<p>JavaScript comes with some built-in higher-order functions. 
+    You may already be using them, without realising that they are higher-order functions.
+     Let’s take a look at some of them, to understand how they work.</p>
+
+  <li>array.prototype.map:The map() method creates a new array with the results 
+      of calling a provided function on every element in the calling array. 
+      What this means is map() calls a provided callback function once for each 
+      element in an array, in order, and constructs a new array from the results.
+
+    The callback accepts three arguments:
+    
+    value of the element
+    index of the element
+    array object
+    You may have used the map() function before. It qualifies as a higher-order function, because it takes in a callback function as an input argument.</li>
+  <li>array.prototype.filter:The filter() method is another example of an in-built higher-order function. 
+      It creates a new array with all the elements that pass the test provided by a callback function. 
+      It also takes in a function as an argument, hence making it a higher-order function. 
+      The callback function passed to the filter() method accepts three arguments:
+
+    value of the element
+    index of the element
+    array object
+    Array elements which do not pass the callback test are simply skipped, and are not included in the new array.</li>
+  <li>array.prototype.reduce:Another built-in higher-order function in JavaScript is the reduce() method.
+      It executes the callback function on each member of the calling array, and results in a single output value. 
+      The reduce() method takes in two input parameters:
+
+    The reducer callback function (making this method a higher-order function)
+    Optional initial value
+    The reducer function (callback) accepts four parameters:
+
+    accumulator
+    currentValue
+    currentIndex
+    sourceArray
+    If an initialValue is provided, then the accumulator will be equal to the initialValue, and the currentValue will be equal to the first element in the array. 
+    Suppose no initialValue is provided, then the accumulator will be equal to the first element in the array and the currentValue will be equal to the second element in the array. </li>

@@ -1,0 +1,37 @@
+<h1>{{ hello }}</h1>
+
+
+<h1>What are JavaScript Promises?</h1>
+<h2>Understanding JavaScript Promises</h2>
+<p>In JavaScript, a promise is an object that returns a value which you hope to receive in the future, but not now.
+
+  Because the value will be returned by the promise in the future, the promise is very well-suited for handling asynchronous operations.
+  
+  It’ll be easier to understand the concept of JavaScript promises through an analogy.
+  
+  Suppose that you promise to complete learning JavaScript by next month.
+  
+  You don’t know if you will spend your time and effort to learn JavaScript until next month. You can either be completing learning JavaScript or not.
+  
+  A promise has three states:
+  
+  <li>Pending: you don’t know if you will complete learning JavaScript by the next month.</li>
+  <li>Fulfilled: you complete learning JavaScript by the next month.</li>
+  <li>Rejected: you don’t learn JavaScript at all.</li>
+  A promise starts in the pending state which indicates that the promise hasn’t completed. It ends with either fulfilled (successful) or rejected (failed) state.</p>
+
+<h3>Summary</h3>
+<p>The Promise constructor accepts a function as an argument. This function is called the executor.
+
+  The executor accepts two functions with the names, by convention, resolve() and reject(). 
+  
+  When you call the new Promise(executor), the executor is called automatically. 
+  
+  Inside the executor, you manually call the resolve() function if the executor is completed successfully and invoke the reject() function in case of an error occurs.</p>
+
+  <li>A promise is an object that returns a value in the future.</li>
+  <li>A promise starts in the pending state and ends in either fulfilled state or rejected state.</li>
+  <li>Use then() method to schedule a callback to be executed when the promise is fullfiled, and catch() method to schedule a callback to be invoked when the promise is rejected.</li>
+  <li>Place the code that you want to execute in the finally() method whether the promise is fulfilled or rejected.</li>
+
+
